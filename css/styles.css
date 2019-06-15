@@ -116,3 +116,19 @@ aside {
 h1 {
     font-size: 30px;
 }
+
+h2 {
+    font-size: 22px;
+}
+.small-block {
+    float: left;
+    max-width: 33%;
+    position: relative;
+    padding: 43px 9px 0 0;
+}
+p {
+    font-size: 14px;
+}
+article > p {
+    padding-bottom: 65px;
+}
