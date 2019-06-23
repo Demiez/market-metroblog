@@ -1,173 +1,244 @@
 @font-face {
-    font-family: 'Trebuchet-custom';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Trebuchet-Custom'), local('Trebuchet-Custom'), url("../fonts/Trebuchet-Custom.ttf") format('truetype');
+  font-family: 'Trebuchet-custom';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Trebuchet-Custom.ttf") format('truetype');
 }
-
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    background-color: #ffffff;
-    color: #848484;
-    padding-top: 120px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  color: #848484;
+  padding-top: 120px;
 }
-
-body * {
-    box-sizing: border-box;
-}
+body * { box-sizing: border-box }
 .holder::after {
-    content: '';
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-
 img {
-    max-width: 100%;
-    width: auto;
+  max-width: 100%;
+  width: auto;
 }
-
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    font-weight: normal; /* For this project only*/
+  margin: 0;
+  font-weight: normal;
 }
 a {
-    color: #323232;
-    text-decoration: none;
+  color: #323332;
+  text-decoration: none;
 }
 
 .wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
-header  {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 30px 0;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: #ffffff;
+
+header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
 }
 header .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 a.logo {
-    font-family: 'Trebuchet-custom', Arial, sans-serif;
-    color: #313131;
-    font-size: 51px;
-
+  font-family: 'Trebuchet-custom', Arial, sans-serif;
+  color: #313131;
+  font-size: 51px;
 }
 a.logo span {
-    color: #595959;
-
+  color: #595959;
 }
-
-a.logo span:after {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #6dd025;
-    position: relative;
-    top: 2px;
-    right: 3px;
-
+a.logo span::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6dd025;
+  position: relative;
+  top: 2px;
+  right: 3px;
 }
-
+#menu-checkbox, .mobile-menu {
+  display: none;
+}
 nav a {
-    font-size: 23px;
-    display: inline-block;
-    padding: 3px 12px;
-    margin-left: 38px;
-    transition: background-color .7s, color .7s;
+  font-size: 23px;
+  display: inline-block;
+  padding: 3px 12px;
+  margin-left: 38px;
+  transition: background-color .7s, color .7s;
 }
 nav a:hover {
-    color: #ffffff;
-    background-color: #373737;
+  color: #FFFFFF;
+  background-color: #373737;
 }
-
 .banner {
-    padding: 80px 0 50px;
-    text-align: center;
-    
+  padding: 80px 0 50px;
+  text-align: center;
 }
 main.main-container > section {
-    padding-right: 340px;
+  padding-right: 333px;
 }
-
 aside {
-    float: right;
+  float: right;
 }
 .right-banner {
-    padding-bottom: 26px;
+  padding-bottom: 26px;
 }
 .article-banner {
-    float: left;
-    margin: 0 18px 18px 0;
+  float: left;
+  margin: 0 18px 18px 0;
 }
-
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
-
-h2 {
-    font-size: 22px;
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
-.small-block {
-    float: left;
-    max-width: 33%;
-    padding: 30px 11px 0 0;
+main section article.holder {
+  overflow: hidden;
 }
-
-.small-block span {
-    display: inline-block;
-    padding: 19px 0;
-    font-size: 14px;
+.article-item {
+  float: left;
+  padding: 20px 15px 15px 0;
+  width: 33%;
 }
-
-.small-block p {
-    line-height: 1.9;
+.article-item span {
+  font-size: 14px;
+  display: block;
 }
-
-.blocks {
-    padding-bottom: 50px;
+.article-item p {
+  margin-top: 10px;
+  text-align: justify;
 }
-
-article {
-    max-height: 260px;
-}
-
-article > p {
-    padding-bottom: 65px;
-    overflow: hidden;
-    font-size: 14px;
-
-}
-
 footer {
+  background-color: #393a39;
+  color: #FFFFFF;
+  padding: 24px 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+footer .wrapper {
+  position: relative;
+}
+footer a {
+  color: #FFFFFF;
+}
+.socials {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 0;
+}
+.socials a {
+  display: inline-block;
+  margin-left: 12px;
+}
+.socials a img {
+  width: 30px;
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    padding: 0 12px;
+  }
+  .socials {
+    right: 12px;
+  }
+}
+
+@media (max-width: 970px) {
+  main.main-container {
     display: flex;
-    background-color: #393a39;
-    height: 88px;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  aside {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right-banner {
+    padding: 12px;
+    display: inline-flex;
     align-items: center;
+  }
+  main.main-container > section {
+    padding-right: 0;
+  }
+  .article-item {
+    width: 50%;
+  }
 }
-
-footer p {
-    font-family: 'Trebuchet-custom', Arial, sans-serif;
-    color: #ffffff;
-    font-size: 16px;
-    padding-left: 23%;
+@media (max-width: 810px) {
+  .mobile-menu {
+    display: inline-flex;
+    cursor: pointer;
+  }
+  .mobile-menu img {
+    width: 48px;
+  }
+  nav {
+    display: none;
+  }
+  header .wrapper {
+    position: relative;
+  }
+  input#menu-checkbox:checked + nav {
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 12px 24px;
+    top: 100%;
+    right: 12px;
+    border: 1px solid #848484;
+  }
+  input#menu-checkbox:checked + nav a {
+    display: block;
+    margin: 6px 0;
+  }
 }
-
-footer img {
-    margin-left: 9px;
+@media (max-width: 690px) {
+  .article-item {
+    float: none;
+    width: 100%;
+    padding: 12px 0;
+  }
+  aside {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section article.holder {
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #848484;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  .article-banner {
+    display: none;
+  }
+  footer .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer .wrapper .socials {
+    position: static;
+    padding-bottom: 12px;
+  }
+  footer .wrapper .socials img {
+    width: 48px;
+  }
 }
-
